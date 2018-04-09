@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A1E53DF207AE95400525861 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E53DE207AE95400525861 /* Users.json */; };
+		2A1E53E1207AF28500525861 /* NotesServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E53E0207AF28500525861 /* NotesServicesTests.swift */; };
+		2A1E53E3207AFA6200525861 /* NotesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E53E2207AFA6200525861 /* NotesViewModelTests.swift */; };
+		2A1E53E5207AFFE700525861 /* NotesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E53E4207AFFE700525861 /* NotesTableViewControllerTests.swift */; };
+		2A8C6EEB207A8CB3000FC727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6EEA207A8CB3000FC727 /* AppDelegate.swift */; };
+		2A8C6EF0207A8CB3000FC727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6EEE207A8CB3000FC727 /* Main.storyboard */; };
+		2A8C6EF5207A8CB4000FC727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6EF4207A8CB4000FC727 /* Assets.xcassets */; };
+		2A8C6EF8207A8CB4000FC727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6EF6207A8CB4000FC727 /* LaunchScreen.storyboard */; };
+		2A8C6F1C207A8CF1000FC727 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6F1B207A8CF1000FC727 /* Podfile */; };
+		2A8C6F1F207A8FC3000FC727 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F1E207A8FC3000FC727 /* NotesTableViewController.swift */; };
+		2A8C6F22207A915B000FC727 /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6F21207A915B000FC727 /* GothamRounded-Book.otf */; };
+		2A8C6F25207A94D8000FC727 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F24207A94D8000FC727 /* NotesViewModel.swift */; };
+		2A8C6F28207A983A000FC727 /* NoteItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F27207A983A000FC727 /* NoteItemTableViewCell.swift */; };
+		2A8C6F2B207AA358000FC727 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F2A207AA358000FC727 /* Extensions.swift */; };
+		2A8C6F2D207AA781000FC727 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F2C207AA781000FC727 /* AddNoteViewController.swift */; };
+		2A8C6F2F207AA8DB000FC727 /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C6F2E207AA8DA000FC727 /* GothamRounded-Light.otf */; };
+		2A8C6F33207ACD92000FC727 /* NoteServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C6F32207ACD92000FC727 /* NoteServices.swift */; };
+		537DBD30BA787CD20EFD5515 /* Pods_WanderNotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3857F3605E84670BDC5B3428 /* Pods_WanderNotesTests.framework */; };
+		8BC3CA6F8E875FFB8E574736 /* Pods_WanderNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59F17A01E5DEC993CAC6E7E /* Pods_WanderNotes.framework */; };
+		CE4D5FDEC6C5810EBF1ED140 /* Pods_WanderNotesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D843C9B275D8AFE4089722C /* Pods_WanderNotesUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A1E53CB207AE63B00525861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A8C6EDF207A8CB3000FC727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A8C6EE6207A8CB3000FC727;
+			remoteInfo = WanderNotes;
+		};
+		2A1E53D9207AE64300525861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A8C6EDF207A8CB3000FC727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A8C6EE6207A8CB3000FC727;
+			remoteInfo = WanderNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1688B12115A8E20E6F14BFD9 /* Pods-Wander NotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander NotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wander NotesTests/Pods-Wander NotesTests.release.xcconfig"; sourceTree = "<group>"; };
+		247617B9403A56A01924E8A2 /* Pods-WanderNotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotesUITests/Pods-WanderNotesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A1E53C6207AE63B00525861 /* WanderNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1E53CA207AE63B00525861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1E53D4207AE64300525861 /* WanderNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1E53D8207AE64300525861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1E53DE207AE95400525861 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		2A1E53E0207AF28500525861 /* NotesServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesServicesTests.swift; sourceTree = "<group>"; };
+		2A1E53E2207AFA6200525861 /* NotesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModelTests.swift; sourceTree = "<group>"; };
+		2A1E53E4207AFFE700525861 /* NotesTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		2A8C6EE7207A8CB3000FC727 /* WanderNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8C6EEA207A8CB3000FC727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A8C6EEF207A8CB3000FC727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A8C6EF4207A8CB4000FC727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A8C6EF7207A8CB4000FC727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A8C6EF9207A8CB4000FC727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8C6F1B207A8CF1000FC727 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2A8C6F1E207A8FC3000FC727 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		2A8C6F21207A915B000FC727 /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		2A8C6F24207A94D8000FC727 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		2A8C6F27207A983A000FC727 /* NoteItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemTableViewCell.swift; sourceTree = "<group>"; };
+		2A8C6F2A207AA358000FC727 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2A8C6F2C207AA781000FC727 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		2A8C6F2E207AA8DA000FC727 /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
+		2A8C6F32207ACD92000FC727 /* NoteServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteServices.swift; sourceTree = "<group>"; };
+		2D843C9B275D8AFE4089722C /* Pods_WanderNotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderNotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3206FA44A93AAAC8C8C93C42 /* Pods-Wander NotesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander NotesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wander NotesUITests/Pods-Wander NotesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3827E8DD0784D5119142F61F /* Pods-WanderNotesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotesUITests/Pods-WanderNotesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3857F3605E84670BDC5B3428 /* Pods_WanderNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1F85C865BC4F4D9401CB4D /* Pods-WanderNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotesTests/Pods-WanderNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		797D6C6F345B295D5C704E4A /* Pods_Wander_NotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wander_NotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80028475F604C0EDF204E53B /* Pods-WanderNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotes/Pods-WanderNotes.release.xcconfig"; sourceTree = "<group>"; };
+		85AB3B579E72D37D03984E83 /* Pods-WanderNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotes/Pods-WanderNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		9BE891A471DA122FFB811927 /* Pods-WanderNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderNotesTests/Pods-WanderNotesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E49C6CCF6BBA54171B367DF /* Pods-Wander NotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander NotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wander NotesUITests/Pods-Wander NotesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8F8B8948A87B4349B44C3F7 /* Pods_Wander_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wander_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEACA95E2889CD105FC010B /* Pods-Wander Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wander Notes/Pods-Wander Notes.release.xcconfig"; sourceTree = "<group>"; };
+		C216BA30709C6F93C0740A52 /* Pods-Wander NotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander NotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wander NotesTests/Pods-Wander NotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5762EFA1FFA05F765440078 /* Pods-Wander Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wander Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wander Notes/Pods-Wander Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6F4C6E82B765BF4D2C9E7F /* Pods_Wander_NotesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wander_NotesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59F17A01E5DEC993CAC6E7E /* Pods_WanderNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1E53C3207AE63B00525861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4D5FDEC6C5810EBF1ED140 /* Pods_WanderNotesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1E53D1207AE64300525861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537DBD30BA787CD20EFD5515 /* Pods_WanderNotesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8C6EE4207A8CB3000FC727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC3CA6F8E875FFB8E574736 /* Pods_WanderNotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1E53C7207AE63B00525861 /* WanderNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E53CA207AE63B00525861 /* Info.plist */,
+				2A1E53E4207AFFE700525861 /* NotesTableViewControllerTests.swift */,
+			);
+			path = WanderNotesUITests;
+			sourceTree = "<group>";
+		};
+		2A1E53D5207AE64300525861 /* WanderNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E53D8207AE64300525861 /* Info.plist */,
+				2A1E53E0207AF28500525861 /* NotesServicesTests.swift */,
+				2A1E53E2207AFA6200525861 /* NotesViewModelTests.swift */,
+			);
+			path = WanderNotesTests;
+			sourceTree = "<group>";
+		};
+		2A8C6EDE207A8CB3000FC727 = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F1B207A8CF1000FC727 /* Podfile */,
+				2A8C6EE9207A8CB3000FC727 /* WanderNotes */,
+				2A1E53C7207AE63B00525861 /* WanderNotesUITests */,
+				2A1E53D5207AE64300525861 /* WanderNotesTests */,
+				2A8C6EE8207A8CB3000FC727 /* Products */,
+				A177660DB7725083F2480A44 /* Pods */,
+				40D1B48E1CEDF9F3320B9A65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A8C6EE8207A8CB3000FC727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6EE7207A8CB3000FC727 /* WanderNotes.app */,
+				2A1E53C6207AE63B00525861 /* WanderNotesUITests.xctest */,
+				2A1E53D4207AE64300525861 /* WanderNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A8C6EE9207A8CB3000FC727 /* WanderNotes */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F31207ACD81000FC727 /* Services */,
+				2A8C6F29207AA34A000FC727 /* Helpers */,
+				2A8C6F26207A9818000FC727 /* Views */,
+				2A8C6F23207A94B4000FC727 /* ViewModels */,
+				2A8C6F20207A9102000FC727 /* Resources */,
+				2A8C6F1D207A8FA6000FC727 /* Controllers */,
+				2A8C6EEA207A8CB3000FC727 /* AppDelegate.swift */,
+				2A8C6EEE207A8CB3000FC727 /* Main.storyboard */,
+				2A8C6EF4207A8CB4000FC727 /* Assets.xcassets */,
+				2A8C6EF6207A8CB4000FC727 /* LaunchScreen.storyboard */,
+				2A8C6EF9207A8CB4000FC727 /* Info.plist */,
+			);
+			path = WanderNotes;
+			sourceTree = "<group>";
+		};
+		2A8C6F1D207A8FA6000FC727 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F1E207A8FC3000FC727 /* NotesTableViewController.swift */,
+				2A8C6F2C207AA781000FC727 /* AddNoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2A8C6F20207A9102000FC727 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E53DE207AE95400525861 /* Users.json */,
+				2A8C6F21207A915B000FC727 /* GothamRounded-Book.otf */,
+				2A8C6F2E207AA8DA000FC727 /* GothamRounded-Light.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A8C6F23207A94B4000FC727 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F24207A94D8000FC727 /* NotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2A8C6F26207A9818000FC727 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F27207A983A000FC727 /* NoteItemTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A8C6F29207AA34A000FC727 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F2A207AA358000FC727 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2A8C6F31207ACD81000FC727 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C6F32207ACD92000FC727 /* NoteServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		40D1B48E1CEDF9F3320B9A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F8B8948A87B4349B44C3F7 /* Pods_Wander_Notes.framework */,
+				797D6C6F345B295D5C704E4A /* Pods_Wander_NotesTests.framework */,
+				EF6F4C6E82B765BF4D2C9E7F /* Pods_Wander_NotesUITests.framework */,
+				F59F17A01E5DEC993CAC6E7E /* Pods_WanderNotes.framework */,
+				3857F3605E84670BDC5B3428 /* Pods_WanderNotesTests.framework */,
+				2D843C9B275D8AFE4089722C /* Pods_WanderNotesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A177660DB7725083F2480A44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5762EFA1FFA05F765440078 /* Pods-Wander Notes.debug.xcconfig */,
+				BCEACA95E2889CD105FC010B /* Pods-Wander Notes.release.xcconfig */,
+				C216BA30709C6F93C0740A52 /* Pods-Wander NotesTests.debug.xcconfig */,
+				1688B12115A8E20E6F14BFD9 /* Pods-Wander NotesTests.release.xcconfig */,
+				3206FA44A93AAAC8C8C93C42 /* Pods-Wander NotesUITests.debug.xcconfig */,
+				9E49C6CCF6BBA54171B367DF /* Pods-Wander NotesUITests.release.xcconfig */,
+				85AB3B579E72D37D03984E83 /* Pods-WanderNotes.debug.xcconfig */,
+				80028475F604C0EDF204E53B /* Pods-WanderNotes.release.xcconfig */,
+				4F1F85C865BC4F4D9401CB4D /* Pods-WanderNotesTests.debug.xcconfig */,
+				9BE891A471DA122FFB811927 /* Pods-WanderNotesTests.release.xcconfig */,
+				3827E8DD0784D5119142F61F /* Pods-WanderNotesUITests.debug.xcconfig */,
+				247617B9403A56A01924E8A2 /* Pods-WanderNotesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A1E53C5207AE63B00525861 /* WanderNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1E53CD207AE63B00525861 /* Build configuration list for PBXNativeTarget "WanderNotesUITests" */;
+			buildPhases = (
+				CF46161588E90A8F1FE6F44C /* [CP] Check Pods Manifest.lock */,
+				2A1E53C2207AE63B00525861 /* Sources */,
+				2A1E53C3207AE63B00525861 /* Frameworks */,
+				2A1E53C4207AE63B00525861 /* Resources */,
+				1CC0BE3AA9B75320A93A33E5 /* [CP] Embed Pods Frameworks */,
+				F3703B6812931024EA8F2057 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1E53CC207AE63B00525861 /* PBXTargetDependency */,
+			);
+			name = WanderNotesUITests;
+			productName = WanderNotesUITests;
+			productReference = 2A1E53C6207AE63B00525861 /* WanderNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2A1E53D3207AE64300525861 /* WanderNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1E53DB207AE64300525861 /* Build configuration list for PBXNativeTarget "WanderNotesTests" */;
+			buildPhases = (
+				BFB1E69EBDFEB60B352B5ACA /* [CP] Check Pods Manifest.lock */,
+				2A1E53D0207AE64300525861 /* Sources */,
+				2A1E53D1207AE64300525861 /* Frameworks */,
+				2A1E53D2207AE64300525861 /* Resources */,
+				0B3A1212BCE0923128F272FD /* [CP] Embed Pods Frameworks */,
+				6886C40F859CE0B8027C8680 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1E53DA207AE64300525861 /* PBXTargetDependency */,
+			);
+			name = WanderNotesTests;
+			productName = WanderNotesTests;
+			productReference = 2A1E53D4207AE64300525861 /* WanderNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A8C6EE6207A8CB3000FC727 /* WanderNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8C6F07207A8CB4000FC727 /* Build configuration list for PBXNativeTarget "WanderNotes" */;
+			buildPhases = (
+				BA77F290243F4C9EF173D131 /* [CP] Check Pods Manifest.lock */,
+				2A8C6EE3207A8CB3000FC727 /* Sources */,
+				2A8C6EE4207A8CB3000FC727 /* Frameworks */,
+				2A8C6EE5207A8CB3000FC727 /* Resources */,
+				D88C1337A4E1F2620CD8C113 /* [CP] Embed Pods Frameworks */,
+				5691AA80655CD18941FF4022 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WanderNotes;
+			productName = "Wander Notes";
+			productReference = 2A8C6EE7207A8CB3000FC727 /* WanderNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A8C6EDF207A8CB3000FC727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lakshman Gurung";
+				TargetAttributes = {
+					2A1E53C5207AE63B00525861 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A8C6EE6207A8CB3000FC727;
+					};
+					2A1E53D3207AE64300525861 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A8C6EE6207A8CB3000FC727;
+					};
+					2A8C6EE6207A8CB3000FC727 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 2A8C6EE2207A8CB3000FC727 /* Build configuration list for PBXProject "WanderNotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A8C6EDE207A8CB3000FC727;
+			productRefGroup = 2A8C6EE8207A8CB3000FC727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A8C6EE6207A8CB3000FC727 /* WanderNotes */,
+				2A1E53C5207AE63B00525861 /* WanderNotesUITests */,
+				2A1E53D3207AE64300525861 /* WanderNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A1E53C4207AE63B00525861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1E53D2207AE64300525861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8C6EE5207A8CB3000FC727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8C6F2F207AA8DB000FC727 /* GothamRounded-Light.otf in Resources */,
+				2A8C6EF8207A8CB4000FC727 /* LaunchScreen.storyboard in Resources */,
+				2A8C6EF5207A8CB4000FC727 /* Assets.xcassets in Resources */,
+				2A8C6F22207A915B000FC727 /* GothamRounded-Book.otf in Resources */,
+				2A8C6F1C207A8CF1000FC727 /* Podfile in Resources */,
+				2A8C6EF0207A8CB3000FC727 /* Main.storyboard in Resources */,
+				2A1E53DF207AE95400525861 /* Users.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3A1212BCE0923128F272FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesTests/Pods-WanderNotesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.3/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-iOS11.3/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS11.3/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS11.3/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesTests/Pods-WanderNotesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CC0BE3AA9B75320A93A33E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesUITests/Pods-WanderNotesUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.3/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-iOS11.3/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS11.3/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS11.3/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesUITests/Pods-WanderNotesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5691AA80655CD18941FF4022 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotes/Pods-WanderNotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6886C40F859CE0B8027C8680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesTests/Pods-WanderNotesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA77F290243F4C9EF173D131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB1E69EBDFEB60B352B5ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderNotesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF46161588E90A8F1FE6F44C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderNotesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88C1337A4E1F2620CD8C113 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotes/Pods-WanderNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS10.0/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-iOS10.0/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS10.0/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS10.0/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotes/Pods-WanderNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3703B6812931024EA8F2057 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderNotesUITests/Pods-WanderNotesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A1E53C2207AE63B00525861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1E53E5207AFFE700525861 /* NotesTableViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1E53D0207AE64300525861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1E53E3207AFA6200525861 /* NotesViewModelTests.swift in Sources */,
+				2A1E53E1207AF28500525861 /* NotesServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8C6EE3207A8CB3000FC727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8C6F2B207AA358000FC727 /* Extensions.swift in Sources */,
+				2A8C6F28207A983A000FC727 /* NoteItemTableViewCell.swift in Sources */,
+				2A8C6F2D207AA781000FC727 /* AddNoteViewController.swift in Sources */,
+				2A8C6F25207A94D8000FC727 /* NotesViewModel.swift in Sources */,
+				2A8C6F33207ACD92000FC727 /* NoteServices.swift in Sources */,
+				2A8C6F1F207A8FC3000FC727 /* NotesTableViewController.swift in Sources */,
+				2A8C6EEB207A8CB3000FC727 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A1E53CC207AE63B00525861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A8C6EE6207A8CB3000FC727 /* WanderNotes */;
+			targetProxy = 2A1E53CB207AE63B00525861 /* PBXContainerItemProxy */;
+		};
+		2A1E53DA207AE64300525861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A8C6EE6207A8CB3000FC727 /* WanderNotes */;
+			targetProxy = 2A1E53D9207AE64300525861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A8C6EEE207A8CB3000FC727 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8C6EEF207A8CB3000FC727 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A8C6EF6207A8CB4000FC727 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8C6EF7207A8CB4000FC727 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A1E53CE207AE63B00525861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3827E8DD0784D5119142F61F /* Pods-WanderNotesUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = WanderNotesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakshman.WanderNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WanderNotes;
+			};
+			name = Debug;
+		};
+		2A1E53CF207AE63B00525861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247617B9403A56A01924E8A2 /* Pods-WanderNotesUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = WanderNotesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakshman.WanderNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WanderNotes;
+			};
+			name = Release;
+		};
+		2A1E53DC207AE64300525861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1F85C865BC4F4D9401CB4D /* Pods-WanderNotesTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = WanderNotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakshman.WanderNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderNotes.app/WanderNotes";
+			};
+			name = Debug;
+		};
+		2A1E53DD207AE64300525861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE891A471DA122FFB811927 /* Pods-WanderNotesTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = WanderNotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakshman.WanderNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderNotes.app/WanderNotes";
+			};
+			name = Release;
+		};
+		2A8C6F05207A8CB4000FC727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A8C6F06207A8CB4000FC727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A8C6F08207A8CB4000FC727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85AB3B579E72D37D03984E83 /* Pods-WanderNotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = "$(SRCROOT)/WanderNotes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lakshman.Wander-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A8C6F09207A8CB4000FC727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80028475F604C0EDF204E53B /* Pods-WanderNotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWK3367LYW;
+				INFOPLIST_FILE = "$(SRCROOT)/WanderNotes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lakshman.Wander-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1E53CD207AE63B00525861 /* Build configuration list for PBXNativeTarget "WanderNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1E53CE207AE63B00525861 /* Debug */,
+				2A1E53CF207AE63B00525861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1E53DB207AE64300525861 /* Build configuration list for PBXNativeTarget "WanderNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1E53DC207AE64300525861 /* Debug */,
+				2A1E53DD207AE64300525861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8C6EE2207A8CB3000FC727 /* Build configuration list for PBXProject "WanderNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8C6F05207A8CB4000FC727 /* Debug */,
+				2A8C6F06207A8CB4000FC727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8C6F07207A8CB4000FC727 /* Build configuration list for PBXNativeTarget "WanderNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8C6F08207A8CB4000FC727 /* Debug */,
+				2A8C6F09207A8CB4000FC727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A8C6EDF207A8CB3000FC727 /* Project object */;
+}
